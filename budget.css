@@ -21,7 +21,7 @@ body {
     color: blue;
 }
 
-.details {
+.heading {
     color: blue;
     float: left;
     width: 28%;
@@ -43,8 +43,9 @@ body {
 }
 
 #budget_details {
-    background-color: rgb(240, 248, 245);
+    background-color: rgb(240, 248, 235);
     text-align: center;
+    color: black;
 }
 
 .list {
@@ -81,6 +82,12 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+.item__delete--btn {
+    background-color: white;
+    border-style: hidden;
+    padding: 0% 0% 0% 0%;
 }
 
 /*Entering input*/
@@ -148,10 +155,16 @@ body {
 
 /*Responsive layout*/
 @media screen and (max-width:600px) {
+    .heading {
+        width: 100%;
+    }
     .bottom {
       width: 100%;
     }
     .top {
+        width: 100%;
+    }
+    .list {
         width: 100%;
     }
 }
