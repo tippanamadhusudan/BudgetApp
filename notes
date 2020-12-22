@@ -1,0 +1,25 @@
+"html-webpack-plugin": "^4.3.0",
+    To automatically connect Js main file to Html file
+
+"webpack": "^4.44.0",
+    To join multile Js files in to one file
+
+"webpack-cli": "^3.3.12",
+    To run webpack in command line interface
+
+"webpack-dev-server": "^3.11.0"
+    To provide live reloading and development environment
+
+"@babel/core": "^7.10.5",
+    Contains core functionality of the compiler
+
+"@babel/preset-env": "^7.10.4",
+    Take cares to convert all the modern JS features are converted to ES5
+
+"babel-loader": "^8.1.0",
+    Needed for webpack to actually load babel files
+
+"core-js": "^3.6.5",
+    To covert things that are not present in ES5 (like promises), we polyfill them
+
+"regenerator-runtime": "^0.13.7"

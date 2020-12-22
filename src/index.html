@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET APP</title>
+    <!--Below link is to import css stylesheet for enter icons in this HTML-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" type="text/css" href="budget.css">
+</head>
+<body>
+    <div class="top">
+        <header id="head">BUDGET APP</header>
+
+        <div class="chart_details">
+            <div class="heading">
+                <div id="piechart"></div>
+            </div>
+
+            <div class="heading">
+                <div class="details" id="info">
+                    <p id="name" style="color: red;">Please select a month before entering any value.</p>
+                    
+                    <label for="month" style="color: black;">Month : </label>
+                    <select placeholder="MM" class="month">
+                        <option name="" value="" style="display:none;">MM</option>
+                        <option name="January" value="Jan">January</option>
+                        <option name="February" value="Feb">February</option>
+                        <option name="March" value="Mar">March</option>
+                        <option name="April" value="Apr">April</option>
+                        <option name="May" value="May">May</option>
+                        <option name="June" value="Jun">June</option>
+                        <option name="July" value="Jul">July</option>
+                        <option name="August" value="Aug">August</option>
+                        <option name="September" value="Sep">September</option>
+                        <option name="October" value="Oct">October</option>
+                        <option name="November" value="Nov">November</option>
+                        <option name="December" value="Dec">December</option>
+                    </select>
+                </div>
+    
+                <div class="details" id="budget_details">
+                    <div style="color: green;">Income: $<span id="head_income">2000</span></div>
+                    <div style="color: orangered;">Expense: $<span id="head_expense">1200</span></div>
+                    <div style="color: rgb(29, 98, 110);">Budget: $<span id="head_budget">8000</span></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="add">
+        <div class="add__container">
+            <select class="add__type">
+                <option value="inc" selected>+</option>
+                <option value="exp">-</option>
+            </select>
+            <input type="text" class="add__description" placeholder="Add description">
+            <input type="number" class="add__value" placeholder="Value">
+            <button class="add__btn"><i class="btn btn-primary">Enter</i></button>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="income list">
+            <h3>INCOME</h3>
+            <div class="income_list">
+                <!-- <div class="income_item" id="income-0">
+                    <div class="item__description clearfix">Salary</div>
+                    <div class="right">
+                        <div class="item__value clearfix">+ 2,000.00</div>
+                        <div class="item__delete">
+                            <button class="item__delete--btn">
+                                <b class="btn clearfix"><i class="ion-ios-close-outline"></i></b>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    
+        <div class="expense list">
+            <h3>EXPENSES</h3>
+            <div class="expense_list">
+                <!--<div class="expense_item" id="expense-0">
+                    <div class="item__description clearfix">Apartment rent</div>
+                    <div class="right">
+                        <div class="item__value clearfix">- 1200.00</div>
+                        <div class="item__percentage clearfix">21%</div>
+                        <div class="item__delete">
+                            <button class="item__delete--btn"><b class="btn clearfix"><i class="ion-ios-close-outline"></i></b></button>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="budget.js"></script> -->
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+</body>
+</html>
