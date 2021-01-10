@@ -142,7 +142,7 @@ function updateBottomUI(type, des, val) {
     if(length === 0) id=0;
     else id = allData[index][type][length-1].id;
 
-    if(allData[index].exp.length > 0) percentage = allData[index].exp[length - 1].percentage;
+    if(allData[index].exp.length > 0 && type === 'exp') percentage = allData[index].exp[length - 1].percentage;
 
     // Display entered details in respective section(Income/Expense) on UI
     UICtrl.updateBottomUI(type, des, val, id, percentage);
